@@ -4,8 +4,7 @@
 )
 
 #set text(
-  size: 10pt,
-  font: "New Computer Modern"
+  size: 10pt
 )
 
 #set par(
