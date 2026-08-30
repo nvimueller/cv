@@ -5,7 +5,7 @@
 
 #set text(
   size: 10pt,
-  font: "Lato"
+  font: "New Computer Modern"
 )
 
 #set par(
@@ -25,11 +25,11 @@
 }
 
 #align(center)[
-  #text(size: 18pt, weight: "bold")[Ismael Mueller] \
+  #text(size: 18pt, weight: "bold")[Ismael Müller] \
   #v(4pt)
-  ☎ +55 51 98105-8978 | 
-  ✉ #link("mailto:ismoliveira@inf.ufrgs.br")[ismoliveira\@inf.ufrgs.br] | 
-  🔗 #link("https://www.linkedin.com/in/ismael-mueller/")[ismael-mueller] | 
+  ☎ +55 51 98105-8978 |
+  ✉ #link("mailto:ismoliveira@inf.ufrgs.br")[ismoliveira\@inf.ufrgs.br] |
+  🔗 #link("https://www.linkedin.com/in/ismael-mueller/")[ismael-mueller] |
   💻 #link("https://github.com/nvimueller")[nvimueller]
 ]
 
@@ -39,12 +39,10 @@
 Bachelor of Science in Computer Engineering | Sep 2024 - Present \
 *Relevant Coursework:* Digital Circuits, Algorithm Analysis, Software Development
 
-
 #resheading[SKILLS & TECHNICAL TOOLS]
 *Programming:* Python \
 *Technologies:* Altera Quartus, NGSpice, Linux, Git, Github \
 *Languages:* Portuguese (Native), English (C1 Advanced)
-
 
 #resheading[EXPERIENCE]
 
@@ -63,7 +61,6 @@ Bachelor of Science in Computer Engineering | Sep 2024 - Present \
 *Physics I Tutoring* | *Physics Institute, UFRGS* | Sep 2025 - Dec 2025 \
 - Provided in-person support and assistance to students with practical exercises and theoretical concepts.
 - Completed tutoring program with an 'A' grade awarded by the supervising professor.
-
 
 #resheading[PROJECTS]
 
