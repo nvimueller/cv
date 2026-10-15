@@ -1,75 +1,86 @@
-#set page(
-  paper: "a4",
-  margin: 0.5in
-)
+#let hfill(str) = str.split(" ").join(h(1fr))
 
-#set text(
-  size: 10pt,
-  font: "New Computer Modern"
-)                              
-#set par(
-  justify: true
-)
+#set page(paper:"a4", margin:0.5in)
+#set text(size:10pt, font:"New Computer Modern")
+#set par(justify:true)
 
-#set list(
-  indent: 1em,
-  body-indent: 0.5em,
-  spacing: 0.6em
-)
-
-#let resheading(title) = {
-  v(10pt)
-  text(size: 12pt, weight: "bold")[#title]
-  v(4pt)
-}
+#set text(size:16pt)
 
 #align(center)[
-  #text(size: 18pt, weight: "bold")[Ismael Müller] \
-  #v(4pt)
-  ☎ +55 51 98105-8978 |
-  ✉ #link("mailto:ismoliveira@inf.ufrgs.br")[ismoliveira\@inf.ufrgs.br] |
-  🔗 #link("https://www.linkedin.com/in/ismael-mueller/")[ismael-mueller] |
-  💻 #link("https://github.com/nvimueller")[nvimueller]
+  #link("mailto:ismoliveira@inf.ufrgs.br")[*ISMAEL MÜLLER*]\
 ]
 
-#resheading[EDUCATION]
-*Federal University of Rio Grande do Sul* | *Porto Alegre, RS* \
-Bachelor of Science in Computer Engineering | Sep 2024 - Present \
-*Relevant Coursework:* Digital Circuits, Algorithm Analysis, Software Development
+#set text(size:10pt)
 
-#resheading[SKILLS & TECHNICAL TOOLS]
-*Programming:* Python \
-*Technologies:* Altera Quartus, NGSpice, Linux, Git, Github \
-*Languages:* Portuguese (Native), English (C1 Advanced)
+#text(size:12pt)[
+  *EDUCATION*
+  #v(-0.6em)
+  #line(length:100%, stroke:0.5pt)
+]
 
-#resheading[EXPERIENCE]
-
-*Hardware Undergraduate Researcher* | *Informatics Institute, UFRGS* | Aug 2026 - Present
-- Analyzing the propagation delays and transistor-level characteristics of CMOS inverters to evaluate performance.
-- Investigating how varying physical transistor parameters impact overall logic gate speed and circuit efficiency.
-
-#v(8pt)
-
-*Reconecta Extension Project Assistant* | *Informatics Institute, UFRGS* | Jun 2026 - Aug 2026
-- Installed and configured Linux distributions (primarily Linux Mint) and software packages on donated hardware.
-- Refurbished and provisioned desktops for redistribution to under-resourced university students and campus housing.
+#box(width: 205pt)[
+  *Federal* #h(1fr) *University* #h(1fr) *of* #h(1fr) *Rio* #h(1fr) *Grande* #h(1fr) *do* #h(1fr) *Sul*\
+  Bachelor #h(1fr) of #h(1fr) Science #h(1fr) in #h(1fr) Computer #h(1fr) Engineering\
+]
+#h(1fr)
+#box(width: 90pt)[Sep 2024 #h(1fr) -- #h(1fr) Present]
 
 #v(8pt)
 
-*Physics I Tutoring* | *Physics Institute, UFRGS* | Sep 2025 - Dec 2025
-- Provided in-person support and assistance to students with practical exercises and theoretical concepts.
-- Completed tutoring program with an 'A' grade awarded by the supervising professor.
+#text(size:12pt)[
+  *SKILLS AND TECHNICAL TOOLS*
+  #v(-0.6em)
+  #line(length:100%, stroke:0.5pt)
+]
 
-#resheading[PROJECTS]
-
-*Neander Theoretical Processor* | Digital Circuits, Altera Quartus | Jun 2026
-- Reproduced a functional Neander 8-bit processor using a hierarchical block diagram design methodology within Altera Quartus.
-- Implemented the core instruction set, enabling foundational CPU operations such as arithmetic summation, memory loading, and logical operations.
-- Designed and integrated a custom hardware circuit on an FPGA board to output and visualize real-time processor execution data on a physical display.
+*Programming:* Python\
+#box(width: 265pt)[
+  *Technologies:* #h(1fr) Altera Quartus, #h(1fr) NGSpice, #h(1fr) Linux, #h(1fr) Git, #h(1fr) Github\
+  *Languages:* #h(1fr) Portuguese #h(1fr) --- #h(1fr) Native, #h(1fr) English #h(1fr) --- #h(1fr) C1 #h(1fr) Advanced\
+]
 
 #v(8pt)
 
-*Command-Line Task Management Tool* | Python | Jul 2026
-- Developed a pip-installable command-line application using Python's `argparse` library, creating a globally accessible `pydo` command for streamlined terminal workflows.
-- Programmed core task management functionalities - including commands to add, list, rename, and complete tasks - with persistent data storage utilizing a local CSV file architecture.
-- Packaged the project for straightforward deployment, enabling users to clone the repository and install the tool natively for direct execution without manual script invocation.
+#text(size:12pt)[
+  *EXPERIENCE*
+  #v(-0.6em)
+  #line(length:100%, stroke:0.5pt)
+]
+
+*Undergraduate Research Assistant* #h(1fr) 
+#box(width: 90pt)[Aug 2026 #h(1fr) -- #h(1fr) Present]
+- #hfill("Investigating transistor-level characteristics through transient and direct current analysis of time delay and power.")
+- #hfill("Analysing how varying physical transistor parameters impact the speed of logic gates and the efficiency of circuits.")
+
+#v(2pt)
+*Undergraduate Extension Assistant* #h(1fr)
+#box(width: 90pt)[Jun 2026 #h(1fr) -- #h(1fr) Present]
+- #hfill("Installing and configuring Linux operating systems and essential software packages onto donated desktop hardware.")
+- #hfill("Refurbishing and provisioning desktop workstations for redistribution to under-resourced university student homes.")
+
+#v(2pt)
+*Undergraduate Elementary Physics Tutor* #h(1fr)
+#box(width: 90pt)[Sep 2025 #h(1fr) -- #h(1fr) Dec 2025]
+- #hfill("Provided dedicated in-person support and assistance to students mastering practical exercises and core theories.")
+- #hfill("Completed the university tutoring program achieving a final grade A awarded by the supervising professor.")
+
+#v(8pt)
+
+#text(size:12pt)[
+  *PROJECTS*
+  #v(-0.6em)
+  #line(length:100%, stroke:0.5pt)
+]
+
+*Neander Theoretical Processor* #h(1fr)
+#box(width: 90pt)[May 2026 #h(1fr) -- #h(1fr) Jun 2026]
+- #hfill("Reproduced a fully functional 8-bit processor utilizing a hierarchical block diagram inside of Altera Quartus.")
+- #hfill("Implemented the core instruction set, enabling foundational operations including arithmetic and logic functions.")
+- #hfill("Designed a custom hardware circuit on an FPGA board to output real-time execution data onto physical displays.")
+
+#v(2pt)
+*Command-Line Task Management Tool* #h(1fr)
+#box(width: 90pt)[Jul 2026 #h(1fr) -- #h(1fr) Aug 2026]
+- #hfill("Developed a pip-installable command-line application without relying upon external parsing framework libraries.")
+- #hfill("Programmed core task management functionalities alongside a globally accessible command for terminal workflows.")
+- #hfill("Engineered persistent data storage via local CSV files and packaged the entire project for native deployment.")
